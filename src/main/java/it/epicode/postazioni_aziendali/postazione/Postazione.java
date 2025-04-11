@@ -31,5 +31,14 @@ public class Postazione {
     @JoinColumn(name = "edificio_id")
     private Edificio edificio;
 
+    public String toString() {
+        return "Postazione{" +
+                "id=" + id +
+                ", descrizione='" + descrizione + '\'' +
+                ", tipo=" + tipo +
+                ", numeroMaxPosti=" + numeroMaxPosti +
+                ", edificio=" + edificio.getNome() +
+                '}';
+    }
 
 }

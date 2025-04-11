@@ -33,4 +33,15 @@ public class Prenotazione {
     @ManyToOne
     @JoinColumn(name = "postazione_id")
     private Postazione postazione;
+
+    @Override
+    public String toString() {
+        return "Prenotazione{" +
+                "id=" + id +
+                ", dataPrenotazione=" + dataPrenotazione +
+                ", prenotato=" + prenotato +
+                ", utente=" + utente.getUsername() +
+                ", postazione=" + postazione.getDescrizione() +
+                '}';
+    }
 }

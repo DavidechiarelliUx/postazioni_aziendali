@@ -23,5 +23,14 @@ public class Edificio {
     @Column(name = "citta", length = 50, nullable = false)
     private String citta;
 
+    @Override
+    public String toString() {
+        return "Edificio{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", indirizzo='" + indirizzo + '\'' +
+                ", citta='" + citta + '\'' +
+                '}';
+    }
 
 }

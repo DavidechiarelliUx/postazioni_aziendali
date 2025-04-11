@@ -25,7 +25,15 @@ public class Utente {
     @Column(name = "email", length = 100, nullable = false)
     private String email;
 
-
+    @Override
+    public String toString() {
+        return "Utente{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", nomeCompleto='" + nomeCompleto + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 
 
 }
